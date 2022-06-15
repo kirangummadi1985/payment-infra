@@ -15,4 +15,5 @@ module "rabbitmq" {
   VPC_CIDR         = module.vpc.VPC_CIDR
   SUBNET_IDS       = module.vpc.SUBNET_IDS
   NODE_TYPE        = var.NODE_TYPE
+  WORKSTATION_IP = var.WORKSTATION_IP
 }
