@@ -7,5 +7,12 @@ module "vpc" {
   AZ               = var.AZ
 }
 
-
-
+module "rabbitmq" {
+  source = "github.com/kirangummadi1985/tf-module-rabbitmq.git"
+  COMPONENT        = var.COMPONENT
+  ENV              = var.ENV
+  VPC_ID           = module.vpc.VPC_ID
+  VPC_CIDR         = module.vpc.VPC_CIDR
+  SUBNET_IDS       = module.vpc.SUBNET_IDS
+  NODE_TYPE        = var.NODE_TYPE
+}
