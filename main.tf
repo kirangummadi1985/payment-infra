@@ -9,7 +9,7 @@ module "vpc" {
 
 module "rabbitmq" {
   source = "github.com/kirangummadi1985/tf-module-rabbitmq.git"
-  COMPONENT        = var.COMPONENT
+  COMPONENT        = "rabbitmq"
   ENV              = var.ENV
   VPC_ID           = module.vpc.VPC_ID
   VPC_CIDR         = module.vpc.VPC_CIDR
