@@ -5,4 +5,4 @@ variable "SUBNET_CIDR" {}
 variable "AZ" {}
 
 variable "NODE_TYPE" {}
-variable "WORKSTATION_IP" {}
+
