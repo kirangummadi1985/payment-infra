@@ -31,5 +31,6 @@ module "app" {
   NODE_TYPE               = var.EC2_NODE_TYPE
   PORT                    = var.PORT
   WORKSTATION_IP          = var.WORKSTATION_IP
+  IAM_POLICY_CREATE       = true
 }
 
