@@ -16,6 +16,7 @@ module "rabbitmq" {
   SUBNET_IDS       = module.vpc.SUBNET_IDS
   NODE_TYPE        = var.NODE_TYPE
   WORKSTATION_IP = var.WORKSTATION_IP
+  PRIVATE_HOSTED_ZONE_ID  = module.vpc.PRIVATE_HOSTED_ZONE_ID
 }
 
 module "app" {
